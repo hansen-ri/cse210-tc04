@@ -9,7 +9,7 @@ def dealer():
         print("The card is: Queen")
     elif dealer_card == 13:
         print("The card is: King")
-    else
+    else:
         print("The card is: " + dealer_card)
     next_card = random.randint(1, 13)
     guess_hl(next_card)
