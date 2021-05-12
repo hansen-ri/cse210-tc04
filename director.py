@@ -1,6 +1,6 @@
-def dealer():
-    import random
-    dealer_card = random.randint(1, 13)
+import random
+dealer_card = random.randint(1, 13)
+def check_card():
     if dealer_card == 1:
         print("The card is: Ace")
     elif dealer_card == 11:
@@ -10,7 +10,6 @@ def dealer():
     elif dealer_card == 13:
         print("The card is: King")
     else:
-        print("The card is: " + dealer_card)
-    next_card = random.randint(1, 13)
-    guess_hl(next_card)
-    
+        print(f"The card is: {dealer_card}")
+check_card()
+next_card = random.randint(1, 13)
